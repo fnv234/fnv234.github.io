@@ -191,6 +191,7 @@ section {
 
 .section_text_p1 {
     text-align: center;
+ 
 }
 
 .section_text_p2 {
@@ -277,6 +278,7 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .about-details-container, .about-containers {
@@ -379,8 +381,6 @@ article .icon {
     color: black;
     border-color: rgb(163, 163, 163);
 }
-
-/* thought I fixed this too */
 
 #project_1_pic, 
 #project_2_pic,
