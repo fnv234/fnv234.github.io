@@ -10,6 +10,9 @@
         <title>Welcome to my website</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="mediaqueries.css" />
+        <!-- Add React and ReactDOM -->
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     </head>
     <body>
         <nav id="desktop-nav">
@@ -42,43 +45,43 @@
         </nav>
         <section id="profile">
             <div class="section_pic-container">
-                <img src="./assets/profile-picture.jpg" alt="Francesca Venditti profile picture" id="profile_pic" />
+                <img src="./assets/profile-picture.jpg" alt="Francesca Venditti profile picture" id="profile_pic" class="moving-picture" />
             </div>
             <div class="section_text">
-                <p class="section_text_p1">Hello, I'm</p>
-                <h1 class="title">Francesca Venditti</h1>
-                <p class="section_text_p2">Computer Science & Engineering Student @ MIT</p>
+                <p class="section_text_p1 typing-animation">Hello, I'm</p>
+                <h1 class="title typing-animation">Francesca Venditti</h1>
+                <p class="section_text_p2 typing-animation">Computer Science & Engineering Student @ MIT</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
                     <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
                 </div>
                 <div id="socials-container">
-                    <img src="./assets/linkedin2.png" alt="my LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/francesca-venditti-2a268627a/'" />
+                    <img src="./assets/linkedin2.png" alt="my LinkedIn profile" class="icon moving-picture-profile" onclick="location.href='https://www.linkedin.com/in/francesca-venditti-2a268627a/'" />
                     <!-- can add github account link here later -->
                 </div>
             </div>
         </section>
         <section id="about">
-            <p class="section_text_p1">Get to Know More</p>
-            <h1 class="title">About Me</h1>
+            <p class="section_text_p1 typing-animation">Get to Know More</p>
+            <h1 class="title typing-animation">About Me</h1>
             <div class="section-container">
                 <div class="section_pic-container">
-                    <img src="./assets/about-pic.png" alt="extra image of computer" class="about-pic"/>
+                    <img src="./assets/about-pic.png" alt="extra image of computer" class="about-pic moving-picture"/>
                 </div>
                 <div class="about-details-container">
                     <div class="about-containers">
                         <div class="details-container">
-                            <img src="./assets/experience.png" alt="experience icon" class="icon" />
+                            <img src="./assets/experience.png" alt="experience icon" class="icon moving-picture-profile" />
                             <h3>Most Recent Experience</h3>
                             <p>Solutions Engineering @ Deloitte (summer 2024)</p>
                         </div>
                         <div class="details-container">
-                            <img src="./assets/education.png" alt="education icon" class="icon" />
+                            <img src="./assets/education.png" alt="education icon" class="icon moving-picture-profile" />
                             <h3>Education</h3>
                             <p>B.S. in Computer Science & Engineering at MIT (Class of 2026)</p>
                         </div>
                         <div class="details-container">
-                            <img src="./assets/languages.png" alt="languages icon" class="icon" />
+                            <img src="./assets/languages.png" alt="languages icon" class="icon moving-picture-profile" />
                             <h3>Languages</h3>
                             <p>English (Native) </p>
                             <p>Spanish (Proficient) </p>
@@ -98,45 +101,52 @@
             <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
         </section>
         <section id="experience">
-            <p class="section_text_p1">Explore My</p>
-            <h1 class="title">Experience</h1>
+            <p class="section_text_p1 typing-animation">Explore My</p>
+            <h1 class="title typing-animation">Experience</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <h2 class="experience-subtitle">Frontend Development</h2>
                         <div class="article-container">
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>HTML</h3>
                                     <p>Experienced</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>CSS</h3>
                                     <p>Experienced</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>JavaScript</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>TypeScript</h3>
                                     <p>Experienced</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>Material UI</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
+                                <div>
+                                    <h3>React</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
@@ -146,21 +156,21 @@
                         <h2 class="experience-subtitle">Backend Development</h2>
                         <div class="article-container">
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>Node JS</h3>
                                     <p>Basic</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>Express JS</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>Git</h3>
                                     <p>Experienced</p>
@@ -172,35 +182,35 @@
                         <h2 class="experience-subtitle">Other</h2>
                         <div class="article-container">
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>Python</h3>
                                     <p>Experienced</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>C</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>Assembly</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>zsh/bash</h3>
                                     <p>Experienced</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon" />
+                                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon growing-animation" />
                                 <div>
                                     <h3>Software Construction</h3>
                                     <p>Intermediate</p>
@@ -213,8 +223,8 @@
             <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
         </section>
         <section id="projects">
-            <p class="section_text_p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
+            <p class="section_text_p1 typing-animation">Browse My Recent</p>
+            <h1 class="title typing-animation">Projects</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container color-container">
@@ -250,20 +260,20 @@
             <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
         </section>
         <section id="contact">
-            <p class="section_text_p1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
+            <p class="section_text_p1 typing-animation">Get in Touch</p>
+            <h1 class="title typing-animation">Contact Me</h1>
             <div class="contact-info-upper-container">
                 <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon" />
+                    <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon moving-picture-profile" />
                     <p><a href="mailto:francescanvenditti@gmail.com">Gmail</a></p>
                 </div>
                 <div class="contact-info-container">
-                    <img src="./assets/linkedin2.png" alt="linkedin icon" class="icon contact-icon" />
+                    <img src="./assets/linkedin2.png" alt="linkedin icon" class="icon contact-icon moving-picture-profile" />
                     <p><a href="https://www.linkedin.com/in/francesca-venditti-2a268627a/">LinkedIn</a></p>
                     
                 </div>
                 <div class="contact-info-container">
-                    <img src="./assets/education.png" alt="education icon" class="icon contact-icon" />
+                    <img src="./assets/education.png" alt="education icon" class="icon contact-icon moving-picture-profile" />
                     <p><a href="mailto:fnv@mit.edu">MIT Student Email</a></p>
                 </div>
         </section>

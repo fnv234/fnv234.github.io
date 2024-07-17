@@ -122,11 +122,13 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
+    display: block;
 }
 
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
+
 .hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
@@ -145,6 +147,8 @@ a:hover {
 .hamburger-icon span:first-child {
     transform: none;
 }
+
+
 
 /* SECTION */
 
@@ -381,13 +385,36 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes grow2 {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 
 #project_1_pic, 
 #project_2_pic,
 #project_3_pic {
     height: 300px;
     width: 300px;
+    animation: grow2 2s infinite;
 }
 
 /* CONTACT */
@@ -440,4 +467,67 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+
+/* EXTRA ANIMATIONS */
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing-animation {
+    overflow: hidden;
+    border-right: none; /* Remove the cursor */
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(30, end) forwards;
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.growing-animation {
+    animation: grow 2s infinite;
+}
+
+@keyframes grow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.moving-picture-profile {
+    animation: bounce 2s infinite;
+}
+
+.moving-picture {
+    animation: move 2s infinite;
+}
+
+.moving-picture-check {
+    animation: boing 2s infinite;
+}
+
+
+
+
+
+
+/* PROFILE */
+
+#profile_pic {
+    border: 7px solid black;
+    border-radius: 50%;
 }
